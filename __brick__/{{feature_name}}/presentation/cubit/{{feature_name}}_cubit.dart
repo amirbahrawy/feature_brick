@@ -6,11 +6,11 @@ import '../../data/repository/{{feature_name}}_repository.dart';
 part 'home_cubit.freezed.dart';
 
 @freezed
-class {{feature_name.pascalCase()}}State with _${{feature_name}}State {
+class {{feature_name.pascalCase()}}State with _${{feature_name.pascalCase()}}State {
   factory {{feature_name.pascalCase()}}State({
     @Default(false) bool isLoading,
     String? errorMessage,
-  }) = _{{feature_name}}State;
+  }) = _{{feature_name.pascalCase()}}State;
 }
 
 @injectable
