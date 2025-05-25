@@ -9,7 +9,7 @@ class {{feature_name.pascalCase()}}Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (_) => {{feature_name.pascalCase()}}Cubit(RepositoryProvider.of(context))..loadData(),
+      create: (_) => getIt<{{feature_name.pascalCase()}}Cubit>()..init()
       child: Scaffold(
         appBar: AppBar(
           title: Text('{{feature_name.titleCase()}} Screen'),
