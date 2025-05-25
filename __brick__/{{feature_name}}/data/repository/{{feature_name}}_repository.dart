@@ -6,7 +6,7 @@ abstract class {{feature_name.pascalCase()}}Repository {
   Future<List<{{feature_name.pascalCase()}}Model>> fetchData();
 }
 
-@injectable
+@Injectable(as: {{feature_name.pascalCase()}})
 class {{feature_name.pascalCase()}}RepositoryImpl implements {{feature_name.pascalCase()}}Repository {
   @override
   Future<List<{{feature_name.pascalCase()}}Model>> fetchData() async {
