@@ -3,7 +3,7 @@ import 'package:injectable/injectable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../data/repository/{{feature_name}}_repository.dart';
 
-part 'home_cubit.freezed.dart';
+part '{{feature_name}}_cubit.freezed.dart';
 
 @freezed
 class {{feature_name.pascalCase()}}State with _${{feature_name.pascalCase()}}State {
